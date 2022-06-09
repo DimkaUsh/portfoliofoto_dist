@@ -128,7 +128,7 @@ body {
   color: #bdae82;
 }
 .header__logo {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 .header__logo:hover {
   transition: 0.4s linear;
@@ -148,7 +148,7 @@ body {
 }
 
 .lang {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .lang_active {
@@ -164,10 +164,11 @@ body {
 
 .menu__list {
   display: flex;
+  column-gap: 30px;
   list-style-type: none;
 }
 .menu__link {
-  margin-left: 30px;
+  margin-left: 0;
 }
 
 .hero {
@@ -199,10 +200,11 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  row-gap: 40px;
 }
 .skills-card {
   width: 320px;
-  height: 240px;
+  height: 260px;
   padding: 0 20px 0;
   text-align: center;
 }
@@ -547,6 +549,11 @@ body {
   background: #000000;
 }
 
+@media (max-width: 1040px) {
+  .menu__list {
+    column-gap: 15px;
+  }
+}
 @media (max-width: 768px) {
   .button {
     margin-top: 60px;
@@ -768,8 +775,28 @@ body {
   }
 }
 @media (max-width: 619px) {
+  .header__logo {
+    margin-left: 0;
+  }
+  .header__switch-languages {
+    width: 135px;
+    margin-left: 10px;
+  }
+
+  .hamburger {
+    width: 40px;
+    height: 40px;
+  }
+  .hamburger span {
+    width: 40px;
+  }
+
   .hamburger-menu {
     width: 100%;
     padding: 134px 0 0 20%;
+  }
+
+  .button__change-theme {
+    margin-left: 20px;
   }
 }
